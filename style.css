@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #A1E3F9;
+    background-color: #2FA4FF;
     background-image: url("1000_F_549715583_e5K4IBffruP9MzqLzNzOot57X6QKHiY4.jpg");
 }
 
@@ -22,7 +22,7 @@ body {
     border-radius: 10px;
     width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    background-color: #3674B5;
+    background-color: #0E185F;
 }
 
 .searchButton {
