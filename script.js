@@ -27,7 +27,7 @@ function failedToGet() {
     city.innerText = "";
     localTime.innerText = "";
     temp.innerText = "";
-    error.innerText = "There is some issue while fetching your location";
+    error.innerText = "🚨 There is some issue while fetching your location";
 }
 
 function handleEmptyInput() {
@@ -93,6 +93,7 @@ async function gotLocation(position) {
     showSpinner();
     try {
         const result = await getCurrData(position.coords.latitude, position.coords.longitude);
+        console.log(result);
         weatherIcon.style.display = "block";
         city.innerHTML = `${result.location.name}, ${result.location.country}`;
         localTime.innerText = result.location.localtime;
@@ -111,4 +112,8 @@ async function gotLocation(position) {
     finally {
         hideSpinner();
     }
+}
+
+function handleError() {
+    console.log("🚨 There is some issue");
 }
